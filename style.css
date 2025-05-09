@@ -44,3 +44,16 @@ button:hover {
     gap: 20px;
 }
 
+.innerStyle {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.innerStyle img {
+    width: 150px;
+    margin-top: 10px;
+}

@@ -36,7 +36,7 @@ function process(data) {
                                 frameborder="0"
                                 style="border:0"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                src="https://www.google.com/maps?q=${data[a].latlng[0]},${data[a].latlng[1]}&hl=es;z=6&output=embed"
+                                src="https://www.google.com/maps?q=${data[a].latlng[0]},${data[a].latlng[1]}&z=5&output=embed"
                                 allowfullscreen>
                             </iframe>
                             `;
