@@ -24,8 +24,9 @@ function process(data) {
                             Country Flag: <img src="${data[a].flags.png}"> <br><br>
                             Capital : ${data[a].capital}  <br><br>
                             Region: ${data[a].region} <br><br>
-                            Currency: ${data[a].currencies} <br><br>
-                            Languages: ${data[a].languages}<br><br>
+                            Currency: ${data[a].currencies ? Object.values(data[a].currencies).map(c => c.name).join(", ") : "N/A"} <br><br>
+                            Languages: ${data[a].languages ? Object.values(data[a].languages).join(", ") : "N/A"} <br><br>
+
                            
                             
                             <strong>Google Maps Link:</strong> <a href="${data[a].maps.googleMaps}" target="_blank">Open in Google Maps</a><br><br>
