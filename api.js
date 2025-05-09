@@ -18,10 +18,11 @@ function process(data) {
     for (var a = 0; a < data.length; a++) {
         var newDiv = document.createElement("div");
         newDiv.classList.add("innerStyle");
-        newDiv.innerHTML = `Country Name: ${data[a].name.common} <br><br>
+        newDiv.innerHTML = `<img src="${data[a].flags.png}"> <br><br>
+                            Country Name: ${data[a].name.common} <br><br>
 
                             Population: ${data[a].population}<br><br>
-                            Country Flag: <img src="${data[a].flags.png}"> <br><br>
+                            
                             Capital : ${data[a].capital}  <br><br>
                             Region: ${data[a].region} <br><br>
                             Currency: ${data[a].currencies ? Object.values(data[a].currencies).map(c => c.name).join(", ") : "N/A"} <br><br>
